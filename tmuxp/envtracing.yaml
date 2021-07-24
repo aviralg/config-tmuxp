@@ -4,6 +4,9 @@ windows:
   - window_name: emacs
     panes:
       - emacs -nw ~/projects/envtracing-experiment
+  - window_name: vifm
+    panes:
+      - shell_command: vifm ~/projects/envtracing-experiment/
   - window_name: terminal
   - window_name: r-vanilla
     panes:
