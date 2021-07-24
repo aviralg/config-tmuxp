@@ -1,0 +1,10 @@
+session_name: local
+start_directory: "~/"
+windows:
+  - window_name: terminal
+  - window_name: r-vanilla
+    panes:
+      - shell_command: R
+  - window_name: vifm
+    panes:
+      - shell_command: vifm
