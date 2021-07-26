@@ -1,0 +1,21 @@
+session_name: promisebreaker
+start_directory: "~/projects/promisebreaker-experiment"
+windows:
+  - window_name: terminal
+  - window_name: emacs
+    panes:
+      - emacs -nw ~/projects/promisebreaker-experiment
+  - window_name: vifm
+    panes:
+      - shell_command: vifm ~/projects/promisebreaker-experiment/
+  - window_name: r-vanilla
+    panes:
+      - shell_command: make docker-r-dyntrace
+  - window_name: grep
+    panes:
+      - shell_command:
+          - cd ~/projects/promisebreaker-experiment/dependency/library/extract
+  - window_name: htop
+    panes:
+      - shell_command:
+          - htop
